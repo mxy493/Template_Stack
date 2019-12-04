@@ -1,0 +1,12 @@
+[
+  {
+    "directory": "D:/mxy/Documents/Visual Studio 2019/Projects/Template_Stack",
+    "command": "clang-tool -fms-extensions -fms-compatibility -fms-compatibility-version=19  -isystem \"D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.23.28105/include\"  -isystem \"D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.23.28105/atlmfc/include\"  -isystem \"D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Auxiliary/VS/include\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/ucrt\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/um\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/shared\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/winrt\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/cppwinrt\"  -isystem \"C:/Program Files (x86)/Windows Kits/NETFXSDK/4.8/Include/um\"  -D _DEBUG  -D _MT  -D _DLL  -D _CONSOLE  -D _UNICODE  -D UNICODE -std=c++17  \"D:/mxy/Documents/Visual Studio 2019/Projects/Template_Stack/Template_Stack/BracketMatch.cpp\"",
+    "file": "D:/mxy/Documents/Visual Studio 2019/Projects/Template_Stack/Template_Stack/BracketMatch.cpp"
+  },
+  {
+    "directory": "D:/mxy/Documents/Visual Studio 2019/Projects/Template_Stack",
+    "command": "clang-tool -fms-extensions -fms-compatibility -fms-compatibility-version=19  -isystem \"D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.23.28105/include\"  -isystem \"D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.23.28105/atlmfc/include\"  -isystem \"D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Auxiliary/VS/include\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/ucrt\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/um\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/shared\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/winrt\"  -isystem \"D:/Windows Kits/10/Include/10.0.18362.0/cppwinrt\"  -isystem \"C:/Program Files (x86)/Windows Kits/NETFXSDK/4.8/Include/um\"  -D _DEBUG  -D _MT  -D _DLL  -D _CONSOLE  -D _UNICODE  -D UNICODE -std=c++17  \"D:/mxy/Documents/Visual Studio 2019/Projects/Template_Stack/Template_Stack/Template_Stack.cpp\"",
+    "file": "D:/mxy/Documents/Visual Studio 2019/Projects/Template_Stack/Template_Stack/Template_Stack.cpp"
+  }
+]

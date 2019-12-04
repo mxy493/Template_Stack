@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	char* str;
+	string str;
 	cout << "输入字符串：";
 	cin >> str;
 	PrintMachedPairs(str);

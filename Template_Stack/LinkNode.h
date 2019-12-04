@@ -1,6 +1,8 @@
 #pragma once
-struct LinkNode
+template <typename T>
+class LinkNode
 {
-	int data;
+public:
+	T data;
 	LinkNode* link;
 };

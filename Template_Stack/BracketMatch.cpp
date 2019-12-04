@@ -6,12 +6,12 @@
 #include "LinkedStack.h"
 using namespace std;
 
-const int maxLength = 100;  //最大字符串长度
+//const int maxLength = 100;  //最大字符串长度
 
-void PrintMachedPairs(char* expression)
+void PrintMachedPairs(string &expression)
 {
-	LinkedStack<int> s(maxLength);  //栈s存储
-	int j, length = strlen(expression);
+	LinkedStack<int> s;  //栈s存储
+	int j, length = strlen(expression.c_str());
 	for (int i = 1; i < length; i++)
 	{
 		if (expression[i - 1] == '(')

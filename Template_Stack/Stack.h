@@ -1,15 +1,15 @@
 #pragma once
 const int maxSize = 50;
-//enum bool{ false,true };
+//enum bool{ false, true };
 
 template<typename T>
-class Stack {  //æ ˆçš„ç±»å®šä¹‰
+class Stack {  //Õ»µÄÀà¶¨Òå
 public:
 	Stack() {};
-	virtual void Push(const T& x) = 0;  //æ–°å…ƒç´ xè¿›æ ˆ
-	virtual bool Pop(T& x) = 0;  //æ ˆé¡¶å…ƒç´ å‡ºæ ˆï¼Œç”±xè¿”å›
-	virtual bool getTop(T& x) = 0;  //è¯»å–æ ˆé¡¶å…ƒç´ ï¼Œç”±xè¿”å›
-	virtual bool isEmpty() const = 0;  //åˆ¤æ–­æ ˆç©ºå¦
-	virtual bool isFull() const = 0;  //åˆ¤æ–­æ ˆæ»¡å¦
-	virtual int getSize() const = 0;  //è®¡ç®—æ ˆä¸­å…ƒç´ ä¸ªæ•°
+	virtual void Push(const T& x) = 0;  //ĞÂÔªËØx½øÕ»
+	virtual bool Pop(T& x) = 0;  //Õ»¶¥ÔªËØ³öÕ»£¬ÓÉx·µ»Ø
+	virtual bool getTop(T& x) const = 0;  //¶ÁÈ¡Õ»¶¥ÔªËØ£¬ÓÉx·µ»Ø
+	virtual bool isEmpty() const = 0;  //ÅĞ¶ÏÕ»¿Õ·ñ
+	//virtual bool isFull() const = 0;  //ÅĞ¶ÏÕ»Âú·ñ
+	virtual int getSize() const = 0;  //¼ÆËãÕ»ÖĞÔªËØ¸öÊı
 };

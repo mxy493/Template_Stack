@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <assert.h>
 #include "LinkNode.h"
 #include "Stack.h"
 using namespace std;
@@ -15,16 +16,22 @@ public:
 	bool Pop(T& x);  //退栈
 	bool getTop(T& x)const;  //读取栈顶元素
 	bool isEmpty()const { return (top == NULL) ? true : false; }
+	//bool isFull() const {};
 	int getSize()const;  //求栈的元素个数
 	void makeEmpty();  //清空栈的内容
 	friend ostream& operator<<(ostream& os, LinkedStack<T>& s);  //输出栈中元素的重载操作<<
 };
 
+//该函数尚未测试
 template<typename T>
 inline void LinkedStack<T>::Push(const T& x)
 {
 	//将元素值x插入到链式栈的栈顶，即链头
-	top = new LinkedStack<T>(x, top);  //创建新的含x结点
+	//top = new LinkedStack<T>(x, top);  //创建新的含x结点
+	LinkNode<T>* p = new LinkNode<T>;
+	p->data = x;
+	p->link = top;
+	top = p;
 	assert(top != NULL);  //创建结点失败退出
 }
 
@@ -56,9 +63,9 @@ inline int LinkedStack<T>::getSize() const
 {
 	LinkNode<T>* p = top;
 	int k = 0;
-	while (top != NULL)
+	while (p != NULL)
 	{
-		top = top->link;
+		p = p->link;
 		k++;
 	}
 	return k;
@@ -68,7 +75,7 @@ template<typename T>
 inline void LinkedStack<T>::makeEmpty()
 {
 	//逐次删去链式栈中的元素直至栈顶指针为空
-	LinkedStack<T>* p;
+	LinkNode<T>* p;
 	while (top != NULL)
 	{
 		p = top;
